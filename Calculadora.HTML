@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Grasa Corporal e IMC</title>
+    <link rel="stylesheet" href="Calculadora.CSS">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🧮 Calculadora de Grasa Corporal e IMC</h1>
+
+        <!-- Datos de entrada -->
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ej. 70">
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" placeholder="Ej. 175">
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Ej. 25">
+
+        <label for="genero">Género:</label>
+        <select id="genero">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select>
+
+        <label for="cintura">Cintura (cm):</label>
+        <input type="number" id="cintura" placeholder="Ej. 85">
+
+        <label for="cuello">Cuello (cm):</label>
+        <input type="number" id="cuello" placeholder="Ej. 40">
+
+        <label for="cadera" id="caderaLabel">Cadera (cm):</label>
+        <input type="number" id="cadera" placeholder="Ej. 95">
+
+        <!-- Botón de cálculo -->
+        <button onclick="calcular()">Calcular</button>
+
+        <!-- Resultados -->
+        <h2>Resultados</h2>
+        <p id="imcResultado">IMC: --</p>
+        <p id="grasaResultado">% de Grasa Corporal: --</p>
+        <p id="categoriaIMC">Categoría: --</p>
+    </div>
+
+    <script src="Calculadora.JS"></script>
+</body>
+</html>
